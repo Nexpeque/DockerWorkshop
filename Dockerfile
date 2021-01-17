@@ -14,6 +14,5 @@ RUN sed "s/motd=.*/motd=$MOTD/g" && \
 
 EXPOSE 25565
 
-VOLUME [ "/world" ]
 
 ENTRYPOINT ["java", "-jar", "server.jar", "nogui"]
